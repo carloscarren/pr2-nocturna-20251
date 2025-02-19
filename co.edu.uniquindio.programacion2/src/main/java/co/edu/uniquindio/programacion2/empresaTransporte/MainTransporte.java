@@ -1,15 +1,32 @@
 package co.edu.uniquindio.programacion2.empresaTransporte;
 
+import co.edu.uniquindio.programacion2.empresaTransporte.factory.ModelFactory;
 import co.edu.uniquindio.programacion2.empresaTransporte.model.EmpresaTransporte;
 import co.edu.uniquindio.programacion2.empresaTransporte.model.Propietario;
 
 public class MainTransporte {
 
     public static void main(String[] args) {
+        //invokeV1();
+        invokeV2();
+    }
+
+    private static void invokeV2() {
+        ModelFactory modelFactory = ModelFactory.getInstancia();
+        EmpresaTransporte empresaTransporte = modelFactory.getEmpresaTransporte();
+        EmpresaTransporte empresaTransporte2 = modelFactory.getEmpresaTransporte();
+
+        empresaTransporte.getListaPropietarios().remove(0);
+
+    }
+
+    private static void invokeV1() {
         EmpresaTransporte empresaTransporte = inicializarDatos();
-        int totalPropietarios = obtenerNumeroPropietarios(empresaTransporte);
-        String datosPropietarios = obtenerDatosPropietarios(empresaTransporte);
-        System.out.println(datosPropietarios);
+        EmpresaTransporte empresaTransporte2 = inicializarDatos();
+        //int totalPropietarios = obtenerNumeroPropietarios(empresaTransporte);
+        //String datosPropietarios = obtenerDatosPropietarios(empresaTransporte);
+        //System.out.println(datosPropietarios);
+        empresaTransporte.getListaPropietarios().remove(0);
     }
 
     private static String obtenerDatosPropietarios(EmpresaTransporte empresaTransporte) {
