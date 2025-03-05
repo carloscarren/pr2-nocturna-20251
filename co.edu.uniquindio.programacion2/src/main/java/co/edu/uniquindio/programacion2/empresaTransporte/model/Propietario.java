@@ -12,6 +12,8 @@ public class Propietario {
 
     private List<VehiculoCarga> listaVehiculosAsociados = new ArrayList<>();
 
+    EmpresaTransporte ownedByEmpresaTransporte;
+
     public Propietario() {
     }
 

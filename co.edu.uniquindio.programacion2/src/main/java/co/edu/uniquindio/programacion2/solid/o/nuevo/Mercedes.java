@@ -5,4 +5,6 @@ public class Mercedes extends Coche{
     public int precioMedioCoche() {
         return 18000;
     }
+
+
 }
