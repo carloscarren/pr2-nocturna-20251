@@ -1,0 +1,14 @@
+🧠 Beneficios de usar Facade
+Sin Facade	Con Facade
+El cliente gestiona todos los pasos	El cliente usa una interfaz simple
+Mucha lógica visible al cliente	La complejidad queda encapsulada
+Difícil de modificar sin romper código	Se puede cambiar la implementación
+interna sin afectar al cliente
+Alto acoplamiento	Bajo acoplamiento
+✅ Conclusión
+El patrón Facade te permite simplificar el uso de subsistemas complejos al
+ ofrecer una interfaz unificada. En este ejemplo:
+
+Sin Facade: el cliente conoce y coordina cada clase directamente.
+Con Facade: el cliente solo llama un método simple sin preocuparse
+por los detalles internos.
