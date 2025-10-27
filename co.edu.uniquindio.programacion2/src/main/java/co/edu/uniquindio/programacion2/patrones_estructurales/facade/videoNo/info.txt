@@ -1,0 +1,18 @@
+🎯 Escenario del Problema: Reproducción de video
+Supongamos que estás desarrollando un sistema de reproducción de video.
+Para reproducir un video necesitas:
+
+Verificar el archivo
+Cargar el códec correcto
+Abrir el archivo
+Reproducirlo con un reproductor
+🔴 Sin usar el patrón Facade (el cliente controla todo)
+java
+Copy
+Edit
+
+
+Problemas sin usar Facade:
+El cliente (la clase main) controla directamente todos los pasos y depende de las clases concretas.
+Difícil de mantener si cambia la lógica (por ejemplo, cambiar de códec o agregar logs).
+Alta complejidad expuesta al usuario final.

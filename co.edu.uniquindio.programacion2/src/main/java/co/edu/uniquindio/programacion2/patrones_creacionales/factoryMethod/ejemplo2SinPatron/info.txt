@@ -1,0 +1,3 @@
+Supongamos que queremos manejar diferentes tipos de notificaciones en nuestra aplicación, como Email y SMS.
+Sin usar el patrón Factory Method, tendríamos que instanciar manualmente cada tipo de notificación,
+lo que puede generar un código difícil de mantener y extender.
